@@ -1,0 +1,6 @@
+{
+  "name": "Newsram",
+  "description": "متجر نيوسرام الاحترافي للأجهزة الكهربائية والإنارة الحديثة - تسوق أفضل حلول الإضاءة ومستلزمات الكهرباء مع مستشار ذكي والطلب السريع عبر واتساب",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
