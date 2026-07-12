@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-display: "Playfair Display", "Cairo", ui-sans-serif, system-ui, sans-serif;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100dvh;
+  min-height: 100vh; /* fallback */
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #DFB13C;
+  color: #1c1917;
+}
+
+/* Luxury White & Gold Theme Custom Classes */
+.bg-sophisticated-black {
+  background-color: #ffffff;
+}
+
+.bg-sophisticated-zinc {
+  background-color: #FFFDE0;
+}
+
+.border-sophisticated {
+  border-color: rgba(197, 155, 39, 0.15);
+}
+
+.product-card-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  background-color: #ffffff;
+  border: 1px solid rgba(197, 155, 39, 0.15);
+  box-shadow: 0 4px 20px -5px rgba(197, 155, 39, 0.05);
+}
+
+.product-card-hover:hover {
+  transform: translateY(-5px);
+  border-color: #c59b27;
+  box-shadow: 0 15px 30px -10px rgba(197, 155, 39, 0.2);
+}
+
+/* Scrollbar styling for light theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fcfbf7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e2dfd9;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a880;
+}
+
+/* Soft gold glow animation */
+@keyframes ambient-glow {
+  0%, 100% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+.animate-ambient {
+  animation: ambient-glow 8s ease-in-out infinite;
+}
+
+/* Hide scrollbars but allow scrolling */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
